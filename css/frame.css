@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+figure{
+    margin: 0px;
+}
+mark{
+    background-color:transparent;
+    color: #f00;
+}
+
+#big{
+    width:375px;
+    height: 100%;
+    margin:0 auto;
+    position: relative;
+}
+#big>header{
+    position: fixed;
+}
+/*顶部*/
+
+#top{
+    width:375px;
+    height:15px;
+    background-color:#F7A625;
+    font-size:12px;
+    text-align:center;
+}
+#top>img{
+    width: 100%;
+}
+/*界面操作*/
+#big>header>article{
+    height: 40px;
+    text-align: center;
+    background-color:#F7A625;
+    color: white;
+
+}
+#big>header>article>aside{
+    width: 15%;
+    font-size: 38px;
+    line-height: 38px;
+    float: left;
+    cursor:default;
+
+}
+#big>header>article>aside:after{
+    content: "<";
+}
+#big>header>article>h4{
+    width: 75%;
+    float: left;
+    line-height: 4px;
+}
+#big>header >article>div{
+    width: 10%;
+    font-size: 38px;
+    float: left;
+    line-height: 18px;
+}
+
+@media  (min-width:320px) and (max-width: 374px){
+    #big{
+        width:100%;
+        margin: 0px;
+    }
+    #top{
+        width: 100%;
+    }
+}
+
+@media  (min-width:376px) and (max-width: 415px){
+    #big{
+        margin: 0px;
+
+    }
+    #big>header{
+        width:100%;
+    }
+    #top{
+        width:100%;
+    }
+    #top>img{
+        width: 100%;
+    }
+    #big>header>article{
+        width: 100%;
+    }
+}
+

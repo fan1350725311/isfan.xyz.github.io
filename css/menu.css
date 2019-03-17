@@ -1,0 +1,229 @@
+﻿
+
+/*商品详情图*/
+#big>figure{
+    width: 375px;
+    height:32%;
+    position:relative;
+    top: 55px;
+    margin-bottom: 55px;
+}
+#big>figure>img{
+    width: 100%;
+    height: 100%;
+}
+/*商品价格与购物车区*/
+#big>#foodPrice{
+    width: 100%;
+    height:60px;
+    clear: both;
+    border-bottom: solid 1px #cccccc;
+}
+#big>#foodPrice>article{
+    width: 60%;
+    float:left;
+    margin-top: 10px;
+}
+#big>#foodPrice>article>div{
+    width: 10px;
+    height: 10px;
+    background-color: #F7A625;
+    transform: Rotate(45deg);
+    float:left;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+#big>#foodPrice>article>aside{
+    text-indent: 10px;
+}
+#big>#foodPrice>article>mark{
+    display: inline-block;
+    margin-left: 40px;
+    font-size:larger;
+}
+#big>#foodPrice>article>mark:before{
+    content: "￥";
+}
+#big>#foodPrice>article>mark:after{
+    content: ".00";
+}
+#big>#foodPrice>div{
+    width: 38%;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+    background-color: #ffc107;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#big>#foodPrice>div:after{
+    content: "加入购物车";
+}
+/*商品介绍区*/
+#big>#foodList{
+    width: 100%;
+    height: 40%;
+    clear: both;
+
+}
+#big>#foodList>aside{
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+	font-size:14px;
+}
+#big>#foodList>aside>b{
+     width:80px;
+     display: inline-block;
+     float: left;
+     margin-left: 20px;
+ }
+#big>#foodList>aside>span{
+    width: 265px;
+    display: inline-block;
+}
+/*底部结算区*/
+#big>footer{
+    width: 375px;
+    height: 50px;
+    border-top:solid 1px #cccccc;
+    position:fixed;
+    bottom: 0px;
+}
+#big>footer>aside{
+    width:65%;
+    text-align: center;
+    float: left;
+    line-height: 50px;
+    color: red;
+    font-size: larger;
+    visibility: hidden;
+}
+#big>footer>aside:before{
+    content: "共";
+    font-size: 10px;
+    color: #000;
+}
+#big>footer>aside:after{
+    content: "元";
+    font-size: 10px;
+    color: #000;
+}
+#big>footer>div{
+    width:35%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    background-color: #ffc107;
+    line-height: 50px;
+    cursor: pointer;
+}
+#big>footer>div:after{
+    content: "选好了";
+}
+/*底部购物车*/
+#a{
+    width: 50px;
+    height: 50px;
+    border: solid 1px;
+    position: absolute;
+
+}
+#big>footer>figure{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+#big>footer>figure>div{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffc107;
+    margin-left: 40px;
+    margin-top: -8px;
+}
+#big>footer>figure>div>img{
+    width: 70%;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+#big>footer>figure>b{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: -12px;
+    left:75px;
+    background-color: red;
+    visibility: hidden;
+}
+@keyframes go {
+    from{
+        transform: translate(200px,-300px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+/*适应性布局*/
+@media  (min-width:320px) and (max-width: 374px){
+    #big{
+        width: 100%;
+    }
+    #big>figure{
+        width: 100%;
+    }
+    #big>figure>img{
+        width: 100%;
+        height:100%;
+    }
+    #big>#foodList>aside>b{
+        width:65px;
+        margin-left: 10px;
+    }
+    #big>#foodList>aside>span{
+        width: 200px;
+    }
+    #big>footer{
+        width: 100%;
+    }
+
+}
+
+@media  (min-width:376px) and (max-width: 415px){
+    #big{
+        width: 100%;
+    }
+    #big>figure{
+        width:100%;
+    }
+    #big>figure>img{
+        width: 100%;
+        height:100%;
+    }
+    #big>#foodList>aside>b{
+        width:65px;
+        margin-left: 10px;
+    }
+    #big>#foodList>aside>span{
+        width: 260px;
+    }
+    #big>footer{
+        width: 100%;
+    }
+
+}
+@media (max-height: 510px){
+    #big>figure{
+        height: 200px;
+    }
+}

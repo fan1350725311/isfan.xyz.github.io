@@ -1,0 +1,58 @@
+/*历史订单区*/
+#big>section{
+    width: 100%;
+    position: relative;
+    top: 55px;
+    background-color: white;
+}
+#big>section>article{
+    width: 100%;
+    height: 100px;
+    clear: both;
+    margin-bottom: 10px;
+}
+#big>section>time{
+    width: 100%;
+    display: inline-block;
+    text-indent: 1em;
+    color: #8a8b7e;
+    margin-bottom: 8px;
+
+}
+#big>section>article>figure{
+    width: 40%;
+    float: left;
+    margin-left: 15px;
+}
+#big>section>article>figure>img{
+    width: 90%;
+    height: 90px;
+}
+#big>section>article>div{
+    width: 30%;
+    float: left;
+}
+#big>section>article>div>h4{
+    margin-top: 5px;
+	font-size:14px;
+}
+#big>section>article>div>mark:after{
+    content: "元/份";
+}
+/*适应性布局*/
+@media  (min-width:320px) and (max-width: 374px){
+    #big{
+        width: 100%;
+    }
+    #big>section>time{
+        text-indent: 5px;
+    }
+    #big>section>article>figure{
+        margin-left: 5px;
+    }
+
+}
+@media  (min-width:376px) and (max-width: 415px){
+
+
+}

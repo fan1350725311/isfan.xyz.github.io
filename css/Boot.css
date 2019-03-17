@@ -1,0 +1,56 @@
+﻿section{
+    width:375px;
+    height:667px;
+    margin:0 auto;
+    background-image: url("../images/11.png");
+    position: relative;
+}
+section>canvas{
+    animation:casMove 1s linear;
+    margin-top: 0px;
+}
+@keyframes casMove {
+    from{
+        transform:Scale(0.1);
+        /*transform: Rotate(-20deg) Rotate(-20deg) RotateY(20deg);*/
+    }
+    to{
+        transform:Scale(1);
+        /*transform: Rotate(-20deg) Rotate(-20deg)  RotateY(360deg);*/
+    }
+}
+section>figure{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 190px;
+}
+section>figure>img{
+    width: 100%;
+}
+section>aside{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:220px;
+    left:146px;
+    z-index:10;
+    animation:aside_imgMove 1s linear;
+}
+section>aside>img{
+    width: 90%;
+    height: 90%;
+}
+@keyframes aside_imgMove{
+    from{
+        transform:Scale(0.1);
+        transform: translate(200px,200px);
+    }
+
+    to{
+        transform: translate(0px,0px);
+        transform:Scale(1);
+        /*transform: Rotate(-20deg) Rotate(-20deg)  RotateY(360deg);*/
+    }
+}
